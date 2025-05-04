@@ -1,0 +1,32 @@
+
+{
+  "info": {
+    "name": "PNR System",
+    "_postman_id": "abc12345",
+    "description": "PNR System API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"employeeNumber\": \"TC001\",\n  \"password\": \"tc123\"\n}",
+          "options": {
+            "raw": { "language": "json" }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/tc/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "tc", "login"]
+        }
+      }
+    }
+  ]
+}
